@@ -1,0 +1,282 @@
+/* Reset some default browser styles */
+html, body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a clean and professional font */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Style the header and navigation */
+header {
+    background-color: #007BFF; /* Blue header */
+    color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffd700; /* Change to your desired hover color */
+}
+
+/* Style the hero section */
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #007BFF; /* Blue text */
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #007BFF; /* Blue button */
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #050505; /* Change to your desired hover color */
+}
+
+/* Add styles for other sections (features, pricing, contact) as needed */
+
+/* Style the Features section */
+.features {
+    background-color: #f7f7f7;
+    padding: 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature {
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature img {
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.feature h2 {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #007BFF; /* Blue text */
+}
+
+.feature p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Style the Pricing section */
+.pricing {
+    background-color: #f7f7f7;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.price-card {
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.price-card h3 {
+    font-size: 24px;
+    margin: 15px 0;
+    color: #007BFF; /* Blue text */
+}
+
+.price {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin: 15px 0;
+}
+
+.price-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.price-card ul li {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Add hover effect for the price cards */
+.price-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Add hover effect for the feature cards */
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Style the footer */
+footer {
+    background-color: #007BFF; /* Blue footer */
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Media queries for responsive design can be added here */
+
+.pricing {
+    background-image: url('botwhisper.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-attachment: fixed; /* Fixed background while scrolling */
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    position: relative; /* To allow z-index for price cards */
+}
+
+.price-card {
+    max-width: 300px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for price cards */
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.price-card h3 {
+    font-size: 24px;
+    margin: 15px 0;
+    color: #007BFF; /* Blue text */
+}
+
+.price {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin: 15px 0;
+}
+
+.price-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.price-card ul li {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Add hover effect for the price cards */
+.price-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Your existing CSS styles for larger screens go here */
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+    /* Adjust styles for tablets and smaller screens here */
+    body {
+        font-size: 16px; /* Adjust font size for better readability on smaller screens */
+    }
+
+    .hero {
+        padding: 80px 0; /* Increase padding for smaller screens */
+    }
+
+    .price-card {
+        max-width: 100%; /* Make pricing cards take the full width on smaller screens */
+        margin: 10px; /* Reduce margin for pricing cards on smaller screens */
+    }
+}
+
+/* Media query for smartphones */
+@media (max-width: 576px) {
+    /* Further adjust styles for smartphones here */
+    .hero {
+        padding: 60px 0; /* Reduce padding for smartphones */
+    }
+
+    .price-card {
+        padding: 15px; /* Adjust padding for pricing cards on smartphones */
+    }
+}
+
