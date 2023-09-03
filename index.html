@@ -83,6 +83,7 @@
                 <h3>Premium Plan</h3>
                 <div class="price">$500</div>
                 <ul>
+                    <li>Whole Custom Made Web Application</li>
                     <li>Custom Chatbots</li>
                     <li>24/7 Support</li>
                     <li>Advanced Analytics</li>
@@ -102,7 +103,24 @@
     <footer>
         <p>&copy; 2023 BotWhisper Pro</p>
     </footer>
-    <script> window.danteEmbed = "https://chat.dante-ai.com/embed?kb_id=ccd6d08b-0161-48a0-a795-3a523e63b136&token=4b32cefd-6590-46c9-a28e-ae7af9da0e3c&modeltype=gpt-3.5-turbo&mode=undefined&bubble=true&image=null&bubbleopen=false" </script> <script src="https://chat.dante-ai.com/bubble-embed.js"></script>
+    <script>
+        window.addEventListener('mouseover', initLandbot, { once: true });
+        window.addEventListener('touchstart', initLandbot, { once: true });
+        var myLandbot;
+        function initLandbot() {
+          if (!myLandbot) {
+            var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+            s.addEventListener('load', function() {
+              myLandbot = new Landbot.Popup({
+                configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-1709539-O39YTDCPZYKYH9KM/index.json',
+              });
+            });
+            s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+          }
+        }
+        </script>
     <script src="script.js"></script>
 </body>
 </html>
